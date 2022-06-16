@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   NavbarWrapper,
   NavBlock,
@@ -7,22 +7,26 @@ import {
   NavItem,
   NavList,
   NavLogo,
-} from "./navbarStyles";
-import { Container } from "./../../data/styles";
-import images from "./../../data/images";
-import { RiWhatsappFill, RiTelegramFill } from "react-icons/ri";
-import { FiChevronDown } from "react-icons/fi";
-import { Link } from "react-router-dom";
-import Button from "../UI/Button/Button";
+} from './navbarStyles';
+import {Container} from './../../data/styles';
+import images from './../../data/images';
+import {RiWhatsappFill, RiTelegramFill} from 'react-icons/ri';
+import {FiChevronDown} from 'react-icons/fi';
+import {Link} from 'react-router-dom';
+import Button from '../UI/Button/Button';
 
 const Navbar = () => {
   return (
     <NavbarWrapper>
       <Container>
         <NavContent>
-          <NavLogo href="/">
-            <img src={images.logo} alt="" />
-            DiscountsOnServices
+          <NavLogo>
+            <Link to="/">
+              <img src={images.logo} alt="" />
+              <span>
+                DiscountsOnServices
+              </span>
+            </Link>
           </NavLogo>
           <NavList>
             <NavItem>
@@ -47,10 +51,10 @@ const Navbar = () => {
             </NavItem>
           </NavList>
           <NavBlock>
-            <NavBlockLink>
+            <NavBlockLink href="/">
               <RiWhatsappFill />
             </NavBlockLink>
-            <NavBlockLink>
+            <NavBlockLink href="/">
               <RiTelegramFill />
             </NavBlockLink>
             <NavBlockLink>

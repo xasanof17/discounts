@@ -20,9 +20,16 @@
   --blue: #1749B3;
   --lightBlue: #4B84FD;
   --white: #fff;
+  --spotifybg: #21e064;
+  --checked:#11C118;
   --youtubebg: #E1DCEB;
   --boxShadow: rgba(213, 216, 221, 0.2);
   --listShadow: rgba(177, 177, 177, 0.4);
+}
+
+::selection {
+  color: var(--lightBlue);
+  background: var(--listShadow);
 }
 
 body {
@@ -30,8 +37,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--body);
 }
 
 .main {
   padding: 80px 0 120px 0;
+}
+
+@media (max-width: 991px) {
+  .main {
+    padding: 50px 0 120px 0;
+  }
 }
