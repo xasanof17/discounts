@@ -4,7 +4,7 @@ export const ErrorWrapper = styled.section `
 display: flex;
 align-items: center;
 justify-content: center;
-height: 50vh;
+height: 41.5vh;
 `;
 
 export const ErrorContent = styled.div `

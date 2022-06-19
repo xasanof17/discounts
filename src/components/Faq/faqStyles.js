@@ -69,6 +69,7 @@ justify-content: center;
 color: var(--dark);
 font-size: 28px;
 transition: .5s;
+cursor: pointer;
 &.active{
     svg{
         transform: rotate(180deg);
@@ -101,6 +102,6 @@ export const FaqButton = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-/* width: 100%; */
 margin-top: 40px;
+
 `;

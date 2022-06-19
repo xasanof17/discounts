@@ -462,7 +462,7 @@ width: 100%;
 }
 @media (max-width: 320px){
 width: 100%;
-height: 500px;
+height: 430px;
 }
 `;
 
@@ -507,7 +507,7 @@ color: var(--link);
 }
 @media (max-width: 320px) {
     &.first{
-        margin: 11px 0;
+margin: 11px 0;
     max-width: 270px;
     width: 100%;
 }   
@@ -521,6 +521,9 @@ line-height: 150%;
 color: var(--black);
 @media (max-width: 768px) {
     font-size: 16px;   
+}
+@media (max-width: 320px) {
+    font-size: 15px;   
 }
 `;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Req, ReqBox, ReqBtn, ReqLeft, ReqRight, ReqTitle, ReqTxt} from './requestStyles';
+import {Req, ReqBox, ReqLeft, ReqRight, ReqTitle, ReqTxt} from './requestStyles';
 import WhiteButton from './../UI/WhiteButton/WhiteButton';
 
 const Request = () => {

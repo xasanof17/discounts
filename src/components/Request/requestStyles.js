@@ -21,7 +21,10 @@ justify-content: space-between;
 }
 `;
 
-export const ReqLeft = styled.div``;
+export const ReqLeft = styled.div`
+@media (max-width: 500px) {
+    margin-bottom: 20px;
+}`;
 
 export const ReqTitle = styled.h2`
 font-weight: 600;

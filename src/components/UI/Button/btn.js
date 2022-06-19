@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Btn = styled.button `
+font-family: 'GothamPro';
 border-radius: 12px;
 background: var(--blue);
 padding: 10px 40px;

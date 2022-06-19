@@ -1,31 +1,33 @@
 import styled from "styled-components";
 
-export const YouTubeWrapper = styled.section``;
+export const SpotifyWrapper = styled.section`
 
-export const YouTubeCards = styled.div`
+`;
+
+export const SpotifyCards = styled.div `
 display: flex;
-align-items: center;
-justify-content: center;
-@media (max-width: 600px) {
-flex-direction:column;
-/* justify-content: center; */
+/* align-items: center; */
+justify-content: space-between;
+margin-top: 65px;
+width: 100%;
+@media (max-width: 425px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
 }
 `;
+
 export const Cart = styled.div `
 width: 32%;
-/* height: 532px; */
+height: 532px;
 background: var(--white);
 box-shadow: 0px 12px 28px var(--boxShadow);
 border-radius: 32px;
-&:nth-child(1){
-    margin-right: 15px;
-}
 @media (max-width: 425px) {
+    height: 450px;
 width: 98%;
 margin-bottom: 15px;
-&:nth-child(1){
-    margin-right: 0px;
-}
 &:last-child{
     margin-bottom: 0;
 }
@@ -76,7 +78,7 @@ align-items: center;
 gap: 30px;
 svg{
     margin-right: -20px;
-    font-size: 27px;
+    font-size: 18px;
 }
 @media (max-width: 768px) {
     font-size: 15px;
@@ -90,7 +92,7 @@ export const CardPriceDiv = styled.div `
 display: flex;
 align-items:center;
 justify-content: center;
-margin-top: 65px;
+margin-top: 50px;
 @media (max-width: 425px) {
     margin-top: 40px;
 }

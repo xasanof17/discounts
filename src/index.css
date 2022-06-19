@@ -7,7 +7,6 @@
   scroll-behavior: smooth;
   list-style-type: none;
   text-decoration: none;
-  border-radius: none;
   outline: none;
   border: none;
 }
@@ -25,6 +24,8 @@
   --youtubebg: #E1DCEB;
   --boxShadow: rgba(213, 216, 221, 0.2);
   --listShadow: rgba(177, 177, 177, 0.4);
+  --footerIcon:rgba(255, 255, 255, 0.8);
+  --cardTxt: #5C5C5C;
 }
 
 ::selection {

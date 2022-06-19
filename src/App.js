@@ -1,7 +1,9 @@
 import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import {Navbar} from "./components";
-import {Home, Netflix, Error, YouTube, Faq} from "./routes";
+import {Footer, Navbar} from "./components";
+import { Container } from "./data/styles";
+import {Home, Netflix, Error, YouTube, Spotify} from "./routes";
+import Faq from './components/Faq/Faq';
 
 function App() {
     return (
@@ -11,15 +13,25 @@ function App() {
                 <main className="main">
                     <Routes>
                         <Route exact path="/" element={< Home />}/>
-                        <Route exact path="/netflix" element={<Netflix />}/>
-                        <Route exact path="/youtube" element={<YouTube />}/>
-                        <Route exact path="/Faq" element={<Faq />}/>
+                        <Route path="/netflix" element={<Netflix />}/>
+                        <Route path="/youtube" element={<YouTube />}/>
+                        <Route path="/spotify" element={<Spotify />}/>
+                        <Route path="/faq" element={<FaqContent />}/>
                         <Route path="*" element={< Error />}/>
                     </Routes>
                 </main>
+                <Footer />
             </div>
         </Router>
     );
+}
+
+const FaqContent = ()=>{
+    return(
+        <Container>
+            <Faq />
+        </Container>
+    )
 }
 
 export default App;

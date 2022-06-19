@@ -11,52 +11,29 @@ import {
   CardPriceDiv,
   CardDolor,
   CardDolorText,
-  NetflixCards,
-  NetflixWrapper,
   CardButton,
   CardBtn,
-} from './netflixStyles';
+  SpotifyWrapper,
+  SpotifyCards,
+} from './spotifyStyles';
 import {HeaderTop, ContentBtns} from '../../components/content';
 import {BsFillCheckCircleFill} from 'react-icons/bs';
 import Button from '../../components/UI/Button/Button';
 import BlackButton from './../../components/UI/BlackButton/BlackButton';
-const Netflix = () => {
+const Spotify = () => {
   return (
-    <NetflixWrapper>
+    <SpotifyWrapper>
       <Container>
         <HeaderTop
-          title="Choose a Netflix Plan"
-          text="Listen without limits at a bargain price"
+          title="Choose a Spotify Plan"
+          text="Select the subscription type for a period of "
+          span='12 months:'
         />
         <ContentBtns active1="active" />
-        <NetflixCards>
+        <SpotifyCards>
           <Cart>
             <CardTop>
-              <CardTopTxt>Basic</CardTopTxt>
-            </CardTop>
-            <CardBody>
-              <CardBodyList>
-                <CardBodyListItem>
-                  <BsFillCheckCircleFill />Ad-free music listening
-                </CardBodyListItem>
-                <CardBodyListItem>
-                  <BsFillCheckCircleFill />Play anywhere - even offline
-                </CardBodyListItem>
-                <CardBodyListItem>
-                  <BsFillCheckCircleFill />Play anywhere - even offline
-                </CardBodyListItem>
-              </CardBodyList>
-            </CardBody>
-            <CardPriceDiv>
-              <CardDolor>$</CardDolor><CardDolorText>45</CardDolorText>
-            </CardPriceDiv>
-            <CardButton>
-              <CardBtn as={BlackButton}>Get Started</CardBtn>
-            </CardButton>
-          </Cart>
-          <Cart>
-            <CardTop>
-              <CardTopTxt>Standart</CardTopTxt>
+              <CardTopTxt>Individual</CardTopTxt>
             </CardTop>
             <CardBody>
               <CardBodyList>
@@ -72,7 +49,28 @@ const Netflix = () => {
               </CardBodyList>
             </CardBody>
             <CardPriceDiv>
-              <CardDolor>$</CardDolor><CardDolorText>60</CardDolorText>
+              <CardDolor>$</CardDolor><CardDolorText>47</CardDolorText>
+            </CardPriceDiv>
+            <CardButton>
+              <CardBtn as={BlackButton}>Get Started</CardBtn>
+            </CardButton>
+          </Cart>
+          <Cart>
+            <CardTop>
+              <CardTopTxt>Duo</CardTopTxt>
+            </CardTop>
+            <CardBody>
+              <CardBodyList>
+                <CardBodyListItem>
+                  <BsFillCheckCircleFill />2 Premium accounts for a couple under one roof
+                </CardBodyListItem>
+                <CardBodyListItem>
+                  <BsFillCheckCircleFill />Ad-free music listening, play offline, on-demand playback
+                </CardBodyListItem>
+              </CardBodyList>
+            </CardBody>
+            <CardPriceDiv>
+              <CardDolor>$</CardDolor><CardDolorText>57</CardDolorText>
             </CardPriceDiv>
             <CardButton>
               <CardBtn as={Button}>Get Started</CardBtn>
@@ -80,36 +78,36 @@ const Netflix = () => {
           </Cart>
           <Cart>
             <CardTop>
-              <CardTopTxt>Premium</CardTopTxt>
+              <CardTopTxt>Family</CardTopTxt>
             </CardTop>
             <CardBody>
               <CardBodyList>
                 <CardBodyListItem>
-                  <BsFillCheckCircleFill />Ad-free music listening
+                  <BsFillCheckCircleFill />6 Premium accounts for family members living under one roof
                 </CardBodyListItem>
                 <CardBodyListItem>
-                  <BsFillCheckCircleFill />Play anywhere - even offline
+                  <BsFillCheckCircleFill />Block explicit music
                 </CardBodyListItem>
                 <CardBodyListItem>
-                  <BsFillCheckCircleFill />On-demand playback
+                  <BsFillCheckCircleFill />Ad-free music listening, play offline, on-demand playback
                 </CardBodyListItem>
               </CardBodyList>
             </CardBody>
             <CardPriceDiv>
-              <CardDolor>$</CardDolor><CardDolorText>45</CardDolorText>
+              <CardDolor>$</CardDolor><CardDolorText>77</CardDolorText>
             </CardPriceDiv>
             <CardButton>
               <CardBtn as={BlackButton}>Get Started</CardBtn>
             </CardButton>
-          </Cart>
-        </NetflixCards>
+          </Cart>   
+        </SpotifyCards>
 
         <Invite />
 
         <Faq />
       </Container>
-    </NetflixWrapper>
+    </SpotifyWrapper>
   );
 };
 
-export default Netflix;
+export default Spotify;

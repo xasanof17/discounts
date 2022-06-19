@@ -14,6 +14,7 @@ line-height: 130%;
 color: var(--white);
 transition: .5s ease;
 border: 1px solid transparent;
+cursor: pointer;
 &:hover{
 border: 1px solid var(--link);
 background: transparent;

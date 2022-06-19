@@ -6,7 +6,7 @@ const Error = () => {
     <ErrorWrapper>
       <ErrorContent>
         Error 404!
-        Page isn't found
+        This page is being prepared
       </ErrorContent>
     </ErrorWrapper>
   );

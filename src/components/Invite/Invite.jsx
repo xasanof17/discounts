@@ -11,7 +11,7 @@ import {
   InviteWrapper,
 } from './inviteStyles';
 import {MdOutlineContentCopy} from 'react-icons/md';
-import {BsFillCheckCircleFill} from 'react-icons/bs';
+// import {BsFillCheckCircleFill} from 'react-icons/bs';
 
 const Invite = () => {
   return (
