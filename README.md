@@ -12,4 +12,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-![image](https://ibb.co/2ZxXr9n)
+[![image](https://www.linkpicture.com/q/discounts.png)](https://www.linkpicture.com/view.php?img=LPic62ebe4e471f551772058194)
