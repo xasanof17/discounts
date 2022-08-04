@@ -1,6 +1,6 @@
 # This project created with React by Javohir
 
-### `[@mosulmanskie]('https://t.me/xasanoffi/') || [@xasanoffi]('https://t.me/xasanoffi/')`
+### `[@mosulmanskie](https://t.me/xasanoffi/) || [@xasanoffi](https://t.me/xasanoffi/)`
 
 In the project directory, you can run:
 
